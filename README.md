@@ -2,6 +2,16 @@
 
 A simple API that classifies numbers based on various mathematical properties with interesting facts.
 
+## Features
+-- Number classification
+-- Identifying mathematical properties
+-- Numbers API integration to get fun facts
+
+## Technologyies
+ -- Node.js
+ -- Express.js
+ -- Axios
+
 ## Installation
 
 To run the API locally, follow these steps:
@@ -28,12 +38,17 @@ PORT=3001
 ### 4. Run the Application
 
 ```bash
-npm run dev
+npm start
 ```
 
 The server will start on `http://localhost:3001`.
 
-## API Usage
+## API Documentation
+
+## Endpoint
+```
+GET /api/classify-numbers?number={number}
+```
 
 ### Query Parameters
 
@@ -61,7 +76,7 @@ The server will start on `http://localhost:3001`.
 ### Valid Request
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=371
+curl http://localhost:3001/api/classify-number?number=371
 ```
 
 #### Response
@@ -80,7 +95,7 @@ curl http://localhost:3000/api/classify-number?number=371
 ### Invalid Request
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=ghgt
+curl http://localhost:3001/api/classify-number?number=ghgt
 ```
 
 #### Response
@@ -99,7 +114,7 @@ Test the API with these valid numbers to verify all functionality:
 ### Armstrong Numbers
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=371
+curl http://localhost:3001/api/classify-number?number=371
 ```
 
 #### Response
@@ -115,7 +130,7 @@ curl http://localhost:3000/api/classify-number?number=371
 ```
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=153
+curl http://localhost:3001/api/classify-number?number=153
 ```
 
 #### Response
@@ -131,7 +146,7 @@ curl http://localhost:3000/api/classify-number?number=153
 ```
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=8208
+curl http://localhost:3001/api/classify-number?number=8208
 ```
 
 #### Response
@@ -149,7 +164,7 @@ curl http://localhost:3000/api/classify-number?number=8208
 ### Perfect Numbers
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=28
+curl http://localhost:3001/api/classify-number?number=28
 ```
 
 #### Response
@@ -165,7 +180,7 @@ curl http://localhost:3000/api/classify-number?number=28
 ```
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=496
+curl http://localhost:3001/api/classify-number?number=496
 ```
 
 #### Response
@@ -183,7 +198,7 @@ curl http://localhost:3000/api/classify-number?number=496
 ### Prime Numbers
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=17
+curl http://localhost:3001/api/classify-number?number=17
 ```
 
 #### Response
@@ -199,7 +214,7 @@ curl http://localhost:3000/api/classify-number?number=17
 ```
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=23
+curl http://localhost:3001/api/classify-number?number=23
 ```
 
 #### Response
@@ -217,7 +232,7 @@ curl http://localhost:3000/api/classify-number?number=23
 ### Basic Numbers
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=100
+curl http://localhost:3001/api/classify-number?number=100
 ```
 
 #### Response
@@ -233,7 +248,7 @@ curl http://localhost:3000/api/classify-number?number=100
 ```
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=15
+curl http://localhost:3001/api/classify-number?number=15
 ```
 
 #### Response
@@ -249,7 +264,7 @@ curl http://localhost:3000/api/classify-number?number=15
 ```
 
 ```bash
-curl http://localhost:3000/api/classify-number?number=42
+curl http://localhost:3001/api/classify-number?number=42
 ```
 
 #### Response
